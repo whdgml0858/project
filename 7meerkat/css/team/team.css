@@ -1,0 +1,80 @@
+/* 프로모션 띠배너*/
+.promotion{ text-align: center; width: 100%; height: 68px; background: #ff8331; vertical-align: middle; padding: 20px;}
+.promotion a{color: white; vertical-align: middle; font-size: 18px; font-weight: 600;}
+.promotion b{border: 2px solid; padding: 1px 6px; border-radius: 8px; margin-right: 8px; }
+
+/* 슬라이더 영역 */
+.slider input[id*="slide"] {display:none; }
+.slider .slidewrap {max-width:100%; margin:0 auto;}
+.slider .slidelist {white-space:nowrap;font-size:0;overflow:hidden;position:relative;background: black; padding-top: 68px; }
+.slider .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s; }
+.slideitem{width:100%; height:732px; display: table; }
+.slideimg1{width:100%; height:732px; background: url(../img-source/team-banner1.jpg) center; position:absolute; object-fit: cover; opacity: 0.2; background-size: cover;}
+.slideimg2{width:100%; height:732px; background: url(../img-source/team-banner2.jpg) center; position:absolute; object-fit: cover; opacity: 0.2; background-size: cover;}
+.slider .slidelist label {position:absolute;z-index:10;top:50%;transform:translateY(+20%);padding:50px;cursor:pointer;}
+.slider .slidelist .textbox h1:first-child{margin-top: 100px;}
+.slider .slidelist .textbox h1 {max-width: 1194px; font-size:48px;color:#fff;opacity:0;transform:translateY(40px); transition:all 1.75s; margin-left: auto; margin-right: auto; font-weight: 900; text-align: left; }
+.slider .slidelist .textbox p {max-width: 1194px; font-size:32px;color:#fff; opacity:0;transform:translateY(40px); transition:all 1.75s; margin-left: auto; margin-right: auto;font-weight: 400; text-align: left; margin-top: 48px; }
+
+/* input에 체크되면 슬라이드 효과 */
+.slider input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+.slider input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+
+/* input에 체크되면 텍스트 효과 */
+.slider input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox h1 {opacity:1;transform:translateY(0);transition-delay:.4s;}
+.slider input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox h1 {opacity:1;transform:translateY(0);transition-delay:.4s;}
+.slider input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox h2 {opacity:1;transform:translateY(0);transition-delay:.4s;}
+.slider input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox h2 {opacity:1;transform:translateY(0);transition-delay:.4s;}
+.slider input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox p {opacity:1;transform:translateY(0);transition-delay:.4s;}
+.slider input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox p {opacity:1;transform:translateY(0);transition-delay:.4s;}
+
+/* 좌,우 슬라이드 버튼 */
+.slide-control > div {display:none;}
+.slider .left {left:32px;background:url('../img-source/left.svg') center center / 30% no-repeat;}
+.slider .right {right:32px;background:url('../img-source/right.svg') center center / 30% no-repeat;}
+.slider input[id="slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {display:block;}
+.slider input[id="slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {display:block;}
+.slider input[id="slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {display:block;}
+
+/* 페이징 */
+.slide-pagelist {text-align:center;}
+.slide-pagelist > li {display:inline-block;vertical-align:middle;}
+.slide-pagelist > li > label {display:block;padding:4px 32px;background:#D2D6DA; margin:20px 10px;cursor:pointer;}
+.slider input[id="slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#505866;}
+.slider input[id="slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#505866;}
+
+#line{width:100%; height: 1px; max-width:1194px; background-color:#D2D6DA; display: inline-block; margin-top:24px; margin-bottom: 24px; }
+
+/*  미어캣 팀 */
+.team-wrap{ width: 100%; height: 100%; padding-top: 60px; padding-bottom: 80px; }
+.team { max-width:1194px; height: 100%; text-align: center; margin-left: auto; margin-right: auto;}
+.title h1{ font-size: 32px; color: #353C49; text-align: left; margin-bottom: 8px; }
+.title p{ font-size: 21px; color: #505866; text-align: left; margin: 0;}
+.team-card{ width: 276px; height: 100%; display:inline-block; box-shadow:  3px 3px 6px rgba(0, 0, 0, 0.16); padding-bottom: 12px; margin:0px 9px 30px 9px;}
+.team-card:nth-child(16){ box-shadow: none;}
+.team-card:nth-child(17){ box-shadow: none;}
+.team-card img{display: inline-block; margin-bottom: 10px;}
+.team-text{text-align: left;  max-width: 276px; margin-left: 16px; }
+.team-text h1{ font-size: 21px; color: #353C49; font-weight: 600;}
+.team-text h2{ font-size: 16px; color: #505866; font-weight: 400;}
+
+/*  복지제도 */
+.welfare-wrap{ width: 100%; height: 100%; background-color:#F8F9FA; padding-top: 80px; padding-bottom: 80px; }
+.welfare { max-width:1194px; height: 100%; text-align: center; margin-left: auto; margin-right: auto;}
+.welfare-text{text-align: left; display: flex; justify-content: space-between;}
+.welfare-text p{ font-size: 24px; color: #505866; text-align: left; margin: 0;}
+.welfare-text1{vertical-align: top; margin-right: 80px; display: inline-block;}
+.welfare-text2{vertical-align: top; display: inline-block;}
+.welfare-text h1{font-size: 21px; color: #353C49; font-weight: 500; display: inline-block; margin-bottom: 32px;}
+.welfare-text1 p{font-size: 16px; color: #D2D6DA; font-weight: 500; display: inline-block; }
+
+/*  채용제도 */
+.hire-wrap{ width: 100%; height: 100%; padding-top: 80px; padding-bottom: 80px; }
+.hire { max-width:1194px; height: 100%; text-align: center; margin-left: auto; margin-right: auto;}
+.hire .title h1{text-align: center;}
+.hire .title p{text-align: center;}
+.hire-text:not(:nth-child(5)){display: flex; justify-content: space-between; margin-bottom: 24px;}
+.hire-text:nth-child(5){display: flex; justify-content: space-between;}
+.hire-text h1{font-size: 21px; color: #353C49; font-weight: 500; display: inline-block; }
+.hire-text h2{font-size: 21px; color: #353C49; font-weight: 400; display: inline-block;}
+.hire-text h3{font-size: 21px; color: #353C49; font-weight: 500; display: inline-block; }
