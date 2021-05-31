@@ -1,0 +1,22 @@
+/* 제휴문의 메인배너*/
+.visionbanner {width:100%; height:800px; margin:0 auto; background-color: black; padding-top: 68px;}
+.bannerwrap {width:100%; height:732px; position:absolute; display: table;}
+.bannerimg {width:100%; height:732px; background: url(../img-source/vision-banner.jpg) center; position:absolute; object-fit: cover; opacity: 0.2; background-size: cover;}
+.textboxwrap{display:table-cell; vertical-align: middle;}
+.visionbanner .bannerwrap .textbox {max-width:1194px; margin-left:auto; margin-right:auto; line-height:1.6; text-align:left; }
+.visionbanner .bannerwrap .textbox h1 {font-size:48px;color:#fff;font-weight: 900; }
+.visionbanner .bannerwrap .textbox2 {max-width:1194px; margin-left:auto; margin-right:auto; line-height:1.6; text-align:left; margin-top: 128px;}
+.visionbanner .bannerwrap .textbox2 p {font-size:21px;color:#fff; margin-top: 32px; padding: 12px 20px; margin-left: auto; margin-right: auto; border-radius:100px; font-weight: 900; display: inline-block;
+    background: rgba( 255, 255, 255, 0.20 ); box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.15 ); backdrop-filter: blur( 4.0px ); -webkit-backdrop-filter: blur( 4.0px ); border-radius: 100px;
+    border: 1px solid rgba( 255, 255, 255, 0.15 ); margin-right: 12px;}
+
+
+/* 텍스트 효과 */
+.visionbanner .bannerwrap .textbox h1 {animation: move .8s linear both; }
+.visionbanner .bannerwrap .textbox2 p {animation: move .8s linear both; animation-delay: .8s; }
+
+@keyframes move { from {opacity: 0; transform: translateY(40px);} to {opacity: 1; transform: translateY(0px);}}
+/* 영상 */
+.video{text-align: center; padding: 80px 0px;}
+.video h1{color:#353C49; font-size: 42px; margin-bottom: 32px;}
+iframe{max-width:1194px; width: 100%;}
