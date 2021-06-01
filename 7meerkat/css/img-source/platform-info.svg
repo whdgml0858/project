@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="492" height="492" viewBox="0 0 492 492">
+  <g id="그룹_4128" data-name="그룹 4128" transform="translate(-351 -291)">
+    <circle id="타원_341" data-name="타원 341" cx="246" cy="246" r="246" transform="translate(351 291)" fill="#ff8331" opacity="0.05"/>
+    <g id="타원_340" data-name="타원 340" transform="translate(376 316)" fill="none" stroke="#ff8331" stroke-width="1" opacity="0.99">
+      <circle cx="221" cy="221" r="221" stroke="none"/>
+      <circle cx="221" cy="221" r="220.5" fill="none"/>
+    </g>
+    <g id="그룹_4126" data-name="그룹 4126" transform="translate(415.737 369.763)">
+      <g id="그룹_4124" data-name="그룹 4124" transform="translate(0 0)">
+        <circle id="타원_326" data-name="타원 326" cx="108.5" cy="108.5" r="108.5" transform="translate(0.264 108.237)" fill="#fff" opacity="0.5"/>
+        <circle id="타원_327" data-name="타원 327" cx="108.5" cy="108.5" r="108.5" transform="translate(145.264 108.237)" fill="#fff" opacity="0.5"/>
+        <ellipse id="타원_328" data-name="타원 328" cx="108" cy="108.5" rx="108" ry="108.5" transform="translate(73.264 0.237)" fill="#fff" opacity="0.5"/>
+      </g>
+      <g id="그룹_4119" data-name="그룹 4119" transform="translate(0 0)">
+        <g id="타원_326-2" data-name="타원 326" transform="translate(0.264 108.237)" fill="none" stroke="#ff8331" stroke-width="1" stroke-dasharray="4">
+          <circle cx="108.5" cy="108.5" r="108.5" stroke="none"/>
+          <circle cx="108.5" cy="108.5" r="108" fill="none"/>
+        </g>
+        <g id="타원_327-2" data-name="타원 327" transform="translate(145.264 108.237)" fill="none" stroke="#ff8331" stroke-width="1" stroke-dasharray="4">
+          <circle cx="108.5" cy="108.5" r="108.5" stroke="none"/>
+          <circle cx="108.5" cy="108.5" r="108" fill="none"/>
+        </g>
+        <g id="타원_328-2" data-name="타원 328" transform="translate(73.264 0.237)" fill="none" stroke="#ff8331" stroke-width="1" stroke-dasharray="4">
+          <ellipse cx="108" cy="108.5" rx="108" ry="108.5" stroke="none"/>
+          <ellipse cx="108" cy="108.5" rx="107.5" ry="108" fill="none"/>
+        </g>
+        <g id="타원_328-3" data-name="타원 328" transform="translate(73.264 0.237)" fill="none" stroke="#ff8331" stroke-width="1" stroke-dasharray="4 4">
+          <ellipse cx="108" cy="108.5" rx="108" ry="108.5" stroke="none"/>
+          <ellipse cx="108" cy="108.5" rx="107.5" ry="108" fill="none"/>
+        </g>
+      </g>
+      <path id="합치기_9" data-name="합치기 9" d="M72.937,108.174q0-2.9.151-5.764A108.231,108.231,0,0,1,0,5.764,108.343,108.343,0,0,1,108.021,28.426,108.345,108.345,0,0,1,216.044,5.764a108.23,108.23,0,0,1-73.089,96.645h0q.149,2.864.151,5.763a107.9,107.9,0,0,1-35.082,79.747A107.905,107.905,0,0,1,72.937,108.174Z" transform="translate(73.09 108.224)" fill="#ff8331" opacity="0.15"/>
+      <path id="교차_4" data-name="교차 4" d="M0,73.982A107.889,107.889,0,0,1,34.933,0,107.883,107.883,0,0,1,69.866,73.981a108.064,108.064,0,0,1-34.934,5.765A108.055,108.055,0,0,1,0,73.982Z" transform="translate(146.177 136.485)" fill="#ff8331"/>
+      <text id="_7" data-name="7" transform="translate(167.264 201.237)" fill="#fff" font-size="45" font-family="SpoqaHanSansNeo-Bold, Spoqa Han Sans Neo" font-weight="700"><tspan x="0" y="0">7</tspan></text>
+      <text id="Apartment" transform="translate(121.264 79.237)" fill="#ff8331" font-size="22" font-family="SpoqaHanSansNeo-Regular, Spoqa Han Sans Neo"><tspan x="0" y="0">Apartment</tspan></text>
+      <text id="Car" transform="translate(55.566 269.842)" fill="#ff8331" font-size="22" font-family="SpoqaHanSansNeo-Regular, Spoqa Han Sans Neo"><tspan x="0" y="0">Car</tspan></text>
+      <text id="App" transform="translate(160.264 251.237)" fill="#3e3e3e" font-size="22" font-family="SpoqaHanSansNeo-Regular, Spoqa Han Sans Neo"><tspan x="0" y="0">App</tspan></text>
+      <text id="Service" transform="translate(84.264 150.237)" fill="#3e3e3e" font-size="22" font-family="SpoqaHanSansNeo-Regular, Spoqa Han Sans Neo"><tspan x="0" y="0">Service</tspan></text>
+      <text id="Parking_Lot" data-name="Parking
+Lot" transform="translate(214.264 150.237)" fill="#3e3e3e" font-size="22" font-family="SpoqaHanSansNeo-Regular, Spoqa Han Sans Neo"><tspan x="0" y="0">Parking</tspan><tspan x="0" y="33">Lot</tspan></text>
+      <text id="Mobile" transform="translate(260.264 270.237)" fill="#ff8331" font-size="22" font-family="SpoqaHanSansNeo-Regular, Spoqa Han Sans Neo"><tspan x="0" y="0">Mobile</tspan></text>
+      <circle id="타원_337" data-name="타원 337" cx="4" cy="4" r="4" transform="translate(286.264 109.237)" fill="#ff8331"/>
+      <ellipse id="타원_339" data-name="타원 339" cx="4" cy="4.5" rx="4" ry="4.5" transform="translate(177.264 291.237)" fill="#ff8331"/>
+      <circle id="타원_338" data-name="타원 338" cx="4" cy="4" r="4" transform="translate(69.263 109.237)" fill="#ff8331"/>
+      <path id="합치기_11" data-name="합치기 11" d="M5.34,11.443l.765-.762.762.762-.762.765Zm-.762-.762-.762-.762.762-.765.762.765.765.762-.765.762ZM3.054,9.154l-.766-.762.766-.762.763.762.762.762-.762.765ZM1.526,7.63.765,6.868,1.526,6.1l-.765.765L0,6.1.762,5.34l.765-.762.762-.762.766-.765.763-.762.762-.762L5.34.762,6.1,0l.762.762L6.1,1.527l-.765.762-.762.762-.762.765-.763.762-.766.762L1.526,6.1l.762.765.766.762-.766.762Z" transform="translate(174.789 321.526)" fill="#ff8331"/>
+      <path id="합치기_12" data-name="합치기 12" d="M7.874,9V7.874H9V9Zm0-1.126V5.625H9V7.874Zm0-2.249V3.375H9V5.625Zm0-2.249V1.126H0V0H9V1.126H9V3.375Z" transform="translate(49.263 86.237)" fill="#ff8331"/>
+      <path id="합치기_10" data-name="합치기 10" d="M0,9V7.874H1.126V9ZM0,7.874V5.625H1.126V7.874ZM0,5.625V3.375H1.126V5.625ZM0,3.375V1.126H1.126V3.375ZM7.877,1.126H4.5V0H9V1.126Zm-4.5,0H1.126V0H4.5V1.126ZM0,1.126V0H1.126V1.126Z" transform="translate(304.264 86.237)" fill="#ff8331"/>
+      <g id="그룹_4121" data-name="그룹 4121" transform="translate(139.184 26.974)">
+        <rect id="사각형_1785" data-name="사각형 1785" width="77" height="25" rx="12.5" transform="translate(0.079 1.263)" fill="#ff8331"/>
+        <text id="device1" transform="translate(7.079 20.263)" fill="#fff" font-size="17" font-family="SpoqaHanSansNeo-Regular, Spoqa Han Sans Neo"><tspan x="0" y="0">device1</tspan></text>
+      </g>
+      <g id="그룹_4122" data-name="그룹 4122" transform="translate(32.368 215.789)">
+        <rect id="사각형_1785-2" data-name="사각형 1785" width="77" height="24" rx="12" transform="translate(-0.105 1.447)" fill="#ff8331"/>
+        <text id="device3" transform="translate(7.895 20.447)" fill="#fff" font-size="17" font-family="SpoqaHanSansNeo-Regular, Spoqa Han Sans Neo"><tspan x="0" y="0">device3</tspan></text>
+      </g>
+      <g id="그룹_4123" data-name="그룹 4123" transform="translate(256.789 215.789)">
+        <rect id="사각형_1785-3" data-name="사각형 1785" width="76" height="24" rx="12" transform="translate(0.474 1.447)" fill="#ff8331"/>
+        <text id="device2" transform="translate(7.474 20.447)" fill="#fff" font-size="17" font-family="SpoqaHanSansNeo-Regular, Spoqa Han Sans Neo"><tspan x="0" y="0">device2</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
