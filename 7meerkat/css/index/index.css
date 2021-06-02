@@ -1,0 +1,271 @@
+/* 프로모션 띠배너*/
+.promotion{text-align: center; width: 100%; height: 68px; background: #ff8331; vertical-align: middle; padding: 20px;}
+.promotion a{color: white; vertical-align: middle; font-size: 16px; font-weight: 400;}
+.promotion b{border: 2px solid; padding: 2px 6px; border-radius: 8px; margin-right: 8px; font-weight: 600; }
+
+/* 슬라이더 영역 */
+.slider input[id*="slide"] {display:none; }
+.slider .slidewrap {max-width:100%; margin:0 auto;}
+.slider .slidelist {white-space:nowrap;font-size:0;overflow:hidden;position:relative;background: black; padding-top: 68px; }
+.slider .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s; }
+.slideitem{width:100%; height:732px; display: table; }
+.slideimg1{width:100%; height:732px; background: url(../img-source/banner_1.jpg) center; position:absolute; object-fit: cover; opacity: 0.2; background-size: cover;}
+.slideimg2{width:100%; height:732px; background: url(../img-source/banner_2.jpg) center; position:absolute; object-fit: cover; opacity: 0.2; background-size: cover;}
+.slider .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(+20%);padding:50px;cursor:pointer;}
+.slider .slidelist .textbox {position:absolute;z-index:1;top:50%;left:50%;transform:translate(-50%,-50%);}
+.slider .slidelist .textbox p {font-size:21px;color:#fff; background-color:#ff8331; opacity:0;transform:translateY(40px);transition:all 1.75s; margin-bottom: 16px; width: 240px; padding: 8px; margin-left: auto; margin-right: auto; border-radius:100px; font-weight: 900; text-align: center;}
+.slider .slidelist .textbox h1 {font-size:48px;color:#fff;opacity:0;transform:translateY(40px);transition:all 1.75s; font-weight: 200; text-align: center; }
+.slider .slidelist .textbox h2 {font-size:48px;color:#fff;opacity:0;transform:translateY(40px);transition:all 1.75s; font-weight: 900; text-align: center;}
+
+/* 자동 텍스트 효과 */
+.slider .slidelist .textbox p {animation: move 1.2s linear both; animation-fill-mode:none; }
+.slider .slidelist .textbox h1 {animation: move 1.2s linear both; animation-fill-mode:none; }
+.slider .slidelist .textbox h2 {animation: move 1.2s linear both; animation-fill-mode:none; }
+@keyframes move { from {opacity: 0; transform: translateY(40px);} to {opacity: 1; transform: translateY(0px);}}
+
+/* input에 체크되면 슬라이드 효과 */
+.slider input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+.slider input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+.slider input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+
+/* input에 체크되면 텍스트 효과 */
+.slider input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox h1 {opacity:1;transform:translateY(0);transition-delay:.4s;}
+.slider input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox h2 {opacity:1;transform:translateY(0);transition-delay:.4s;}
+.slider input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox h1 {opacity:1;transform:translateY(0);transition-delay:.4s;}
+.slider input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox h2 {opacity:1;transform:translateY(0);transition-delay:.4s;}
+.slider input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox p {opacity:1;transform:translateY(0);transition-delay:.2s;}
+.slider input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox p {opacity:1;transform:translateY(0);transition-delay:.2s;}
+
+
+/* 좌,우 슬라이드 버튼 */
+.slide-control > div {display:none;}
+.slider .left {left:32px;background:url('../img-source/left.svg') center center / 30% no-repeat;}
+.slider .right {right:32px;background:url('../img-source/right.svg') center center / 30% no-repeat;}
+.slider input[id="slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {display:block;}
+.slider input[id="slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {display:block;}
+
+/* 페이징 */
+.slide-pagelist {text-align:center;}
+.slide-pagelist > li {display:inline-block;vertical-align:middle;}
+.slide-pagelist > li > label {display:block;padding:4px 32px;background:#D2D6DA; margin:20px 10px;cursor:pointer;}
+.slider input[id="slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#505866;}
+.slider input[id="slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#505866;}
+
+/* 세븐미어캣 가치 */
+.value-wrap{ width: 100%; height: 100%; padding:60px 0px 80px 0px; }
+.value-wrap h1{text-align: center; color: #353C49; font-weight: 300; font-size: 36px; }
+.value-wrap b{color:#ff8331;}
+.value{ max-width: 1194px; height: 100%; margin-left: auto; margin-right: auto; display: flex; margin-top: 48px; justify-content: space-between;}
+.value h2{ color: #353C49; margin-top: 16px; font-size: 28px; }
+.value h3{ color: #505866; font-weight: 400; margin-top: 2px; font-size: 24px; }
+.value p{ color: #505866; font-weight: 300; margin-top: 12px; font-size: 21px;}
+
+/*  제품소개 */
+.solution-wrap{ width: 100%; height: 100%; background-color: #F8F9FA; padding: 80px 0px;}
+.solution { max-width:1194px; height: 100%; text-align: center; margin-left: auto; margin-right: auto;}
+.title h1{ font-size: 32px; color: #353C49; text-align: center; margin-bottom: 16px; }
+.title p{ font-size: 21px; color: #505866; text-align: center;}
+
+/*  제품소개 탭매뉴 */
+.tab_content {text-align:center; max-width:786px; margin:auto;  border-radius: 24px; padding: 20px; margin-top: 24px; }
+input[type="radio"] {display:none;}
+input[type="radio"] + label {display:inline-block; padding:12px 24px; color:#D2D6DA; font-size:18px;font-weight: 500; cursor:pointer; margin-left: 16px; margin-right: 16px; width: 186px;}
+input[type="radio"]:checked + label { width: 186px; background:white; color: #353C49; font-size: 18px; font-weight: 500; border-radius: 12px; box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.16); margin-left: 16px; margin-right: 16px;}
+
+.conbox {display:none;  margin-top: 32px; font-size:16px; box-sizing:border-box; border-radius: 24px; padding: 48px; margin-left: auto; margin-right:auto; }
+input[id="tab01"]:checked ~ .con1 {display:block;width: 786px; height:540px; background: url(../img-source/solutionimg1.jpg) center;  }
+input[id="tab02"]:checked ~ .con2 {display:block;width: 786px; height:540px; background: url(../img-source/solutionimg2.jpg) center;}
+input[id="tab03"]:checked ~ .con3 {display:block;width: 786px; height:540px; background: url(../img-source/solutionimg3.jpg) center;}
+.conbox h1{font-size: 24px; color: #353C49; margin-bottom: 12px;}
+.conbox h2{font-size: 21px; color: white; background: #ff8331; border-radius: 100px; padding: 6px 12px; max-width:160px; margin: auto; margin-top: 312px; box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.16);}
+.conbox p{font-size: 18px; color:#505866;}
+
+
+/*  세븐미어캣 성과 */
+.performance-wrap{ width: 100%; height: 100%; background-color: #F8F9FA;;  padding: 80px 0px;}
+.performance { max-width:1194px; height: 100%; text-align: center; margin-left: auto; margin-right: auto;}
+.performance-info{ display: flex; justify-content: space-between;}
+.car, .user, .parking{background: url(../img-source/performance-icon.svg) center; width: 298px; height: 117px; display: inline-block; padding: 6px; margin-top: 60px;}
+.car h1, .user h1, .parking h1{color: #353C49; font-size: 32px;}
+.car p, .user p, .parking p{color: #505866; font-size: 24px;}
+.title img{width: 240px; margin-bottom: 12px;}
+.title h1{ font-size: 32px; color: #353C49; text-align: center; margin-bottom: 16px; }
+.title p{ font-size: 21px; color: #505866; text-align: center;}
+
+
+/* 문의 카피문구 */
+.partner-info{ width: 100%; height: 100%; background-color:#FF8331; padding-top: 80px; padding-bottom: 80px; }
+.partner-copy{ max-width:1194px; height: 100%; background-color: white; border-radius: 16px;  margin-left: auto; margin-right: auto; text-align: center; box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.16); }
+.partner-copy .textbox{display:inline-block; padding:80px 0px 80px 0px; }
+.partner-copy .textbox h1{ font-size: 42px; color: #353C49; margin-bottom: 32px;  }
+.partner-copy .textbox p{ font-size: 24px; color: white; background:#ff8331; border-radius:100px; font-weight: 500; width: 390px; display: inline-block; margin-left: 16px; margin-right: 16px; padding: 16px 24px; margin-bottom: 24px;}
+
+
+/*  제휴&광고 문의 */
+.inquiry { width:100%; height: 100%; margin-top: 30px; text-align: center;}
+.inquiry-card{ max-width: 582px; height: 100%; background-color: white; box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.16); margin-right: 16px; margin-left: 16px; border-radius: 16px; padding: 24px 32px; display: inline-block; margin-bottom: 30px;}
+.inquiry-card img{display: inline-block; margin-right: 34px;}
+.inquiry-text{display: inline-block; text-align: left; width: 340px;}
+.inquiry-text h1{ font-size: 24px; color: #353C49; margin-bottom: 4px; margin-top: 0; display: inline-block; }
+.inquiry-text h2{ font-size: 18px; color: #505866; margin-bottom: 4px; font-weight: 200; }
+.inquiry-text p{ font-size: 16px; color: #505866; margin-bottom: 4px; font-weight: 400; }
+
+
+/* 슬라이더 영역 */
+.section{width:100%; height: 100%; padding: 80px 0px; background: url(../img-source/app-background.jpg) center; background-size: cover;}
+.section input[id*="slide"] {display:none;}
+.section .slide-wrap02 {max-width:1194px;margin:0 auto;}
+.section .slidelist02 {white-space:nowrap;font-size:0;overflow:hidden;}
+.section .slidelist02 > li {display:inline-block;vertical-align:middle;width:100%;transition:all .75s;}
+.section .slidelist02 > li > a { display:block; position:relative; }
+.app-img1{width: 100%; height: 855px; background: url(../img-source/app-mockup1.png) center;background-size: cover;}
+.app-img2{width: 100%; height: 855px; background: url(../img-source/app-mockup2.png) center;background-size: cover;}
+.app-img3{width: 100%; height: 855px; background: url(../img-source/app-mockup3.png) center;background-size: cover;}
+.app-img4{width: 100%; height: 855px; background: url(../img-source/app-mockup4.png) center;background-size: cover;}
+.section .slidelist02 label {position:absolute;z-index:10;top:40%;transform:translateY(-50%); padding:50px; cursor:pointer;}
+.section .slidelist02 .left {left:32px; background:url('../img-source/app-left.svg') center center / 70% no-repeat;}
+.section .slidelist02 .right {left:128px; background:url('../img-source/app-right.svg') center center / 70% no-repeat;}
+.section .slidelist02 .textbox {position:absolute; z-index:1; top:20%; left:13%; transform:translate(-50%,-50%); line-height:1.6; text-align: left; }
+
+.section .slidelist02 .textbox h3 {font-size:32px;color:#FF8331;opacity:0;transform:translateY(40px);transition:all 1.75s; font-weight: 900; }
+.section .slidelist02 .textbox h4 {font-size:24px;color:#353C49;opacity:0;transform:translateY(40px);transition:all 1.75s; margin-top: 24px; font-weight: 600; }
+.section .slidelist02 .textbox p {font-size:21px;color:#ff8331;opacity:0;transform:translateY(40px);transition:all 1.75s; margin-top: 24px; font-weight: 400; text-align: center; border: 1px solid #ff8331; padding: 4px; width: 120px; }
+
+.section input[id="slide03"]:checked ~ .slide-wrap02 .slidelist02 > li {transform:translateX(0%);}
+.section input[id="slide04"]:checked ~ .slide-wrap02 .slidelist02 > li {transform:translateX(-100%);}
+.section input[id="slide05"]:checked ~ .slide-wrap02 .slidelist02 > li {transform:translateX(-200%);}
+.section input[id="slide06"]:checked ~ .slide-wrap02 .slidelist02 > li {transform:translateX(-300%);}
+
+.section input[id="slide03"]:checked ~ .slide-wrap02 li:nth-child(1) .textbox h3 {opacity:1;transform:translateY(0);transition-delay:.2s;}
+.section input[id="slide03"]:checked ~ .slide-wrap02 li:nth-child(1) .textbox h4 {opacity:1;transform:translateY(0);transition-delay:.4s;}
+.section input[id="slide03"]:checked ~ .slide-wrap02 li:nth-child(1) .textbox p {opacity:1;transform:translateY(0);transition-delay:.4s;}
+.section input[id="slide04"]:checked ~ .slide-wrap02 li:nth-child(2) .textbox h3 {opacity:1;transform:translateY(0);transition-delay:.2s;}
+.section input[id="slide04"]:checked ~ .slide-wrap02 li:nth-child(2) .textbox h4 {opacity:1;transform:translateY(0);transition-delay:.4s;}
+.section input[id="slide04"]:checked ~ .slide-wrap02 li:nth-child(2) .textbox p {opacity:1;transform:translateY(0);transition-delay:.4s;}
+.section input[id="slide05"]:checked ~ .slide-wrap02 li:nth-child(3) .textbox h3 {opacity:1;transform:translateY(0);transition-delay:.2s;}
+.section input[id="slide05"]:checked ~ .slide-wrap02 li:nth-child(3) .textbox h4 {opacity:1;transform:translateY(0);transition-delay:.4s;}
+.section input[id="slide05"]:checked ~ .slide-wrap02 li:nth-child(3) .textbox p {opacity:1;transform:translateY(0);transition-delay:.4s;}
+.section input[id="slide06"]:checked ~ .slide-wrap02 li:nth-child(4) .textbox h3 {opacity:1;transform:translateY(0);transition-delay:.2s;}
+.section input[id="slide06"]:checked ~ .slide-wrap02 li:nth-child(4) .textbox h4 {opacity:1;transform:translateY(0);transition-delay:.4s;}
+.section input[id="slide06"]:checked ~ .slide-wrap02 li:nth-child(4) .textbox p {opacity:1;transform:translateY(0);transition-delay:.4s;}
+
+
+/* 모바일 */
+@media (max-width: 425px){
+
+/* 프로모션 띠배너*/
+.promotion{text-align: center; width: 100%; height: 48px; background: #ff8331; vertical-align: middle; padding: 12px;}
+.promotion a{color: white; vertical-align: middle; font-size: 11px; font-weight: 400;}
+.promotion b{border: 1px solid; padding: 2px 4px; border-radius: 8px; margin-right: 4px; font-weight: 600; }
+
+/* 슬라이드*/
+.slideitem{width:100%; height:360px; display: table; }
+.slider .slidelist {white-space:nowrap;font-size:0;overflow:hidden;position:relative;background: black; padding-top: 48px; }
+.slideimg1{width:100%; height:360px; background: url(../img-source/banner_1.jpg) center; position:absolute; object-fit: cover; opacity: 0.2; background-size: cover;}
+.slideimg2{width:100%; height:360px; background: url(../img-source/banner_2.jpg) center; position:absolute; object-fit: cover; opacity: 0.2; background-size: cover;}
+.slider .slidelist .textbox {position:absolute;z-index:1;top:55%;left:50%;transform:translate(-50%,-50%);}
+.slider .slidelist .textbox p {font-size:15px;color:#fff; background-color:#ff8331; opacity:0;transform:translateY(40px);transition:all 1.75s; margin-bottom: 16px; width: 180px; padding: 6px; margin-left: auto; margin-right: auto; border-radius:100px; font-weight: 900; text-align: center;}
+.slider .slidelist .textbox h1 {font-size:21px;color:#fff;opacity:0;transform:translateY(40px);transition:all 1.75s; font-weight: 200; text-align: center; }
+.slider .slidelist .textbox h2 {font-size:21px;color:#fff;opacity:0;transform:translateY(40px);transition:all 1.75s; font-weight: 900; text-align: center;}
+
+/* 좌,우 슬라이드 버튼 */
+.slider .left {left:-8px;background:url('../img-source/left.svg') center center / 20% no-repeat;}
+.slider .right {right:-8px;background:url('../img-source/right.svg') center center / 20% no-repeat;}
+
+/* 세븐미어캣 가치 */
+.value-wrap{ width: 100%; height: 100%; padding:20px 0px 40px 0px; }
+.value-wrap h1{text-align: center; color: #353C49; font-weight: 300; font-size: 21px; }
+.value-wrap b{color:#ff8331;}
+.value{ max-width: 1194px; height: 100%; margin-left: auto; margin-right: auto; display: flex; margin-top: 16px; justify-content: space-between;}
+.value h2{ color: #353C49; margin-top: 12px; font-size: 21px; }
+.value h3{ color: #505866; font-weight: 400; margin-top: 2px; font-size: 21px; }
+.value p{ color: #505866; font-weight: 300; margin-top: 8px; font-size: 16px;}
+.value-inno img{width: 320px;}
+.value-con img{width: 320px;}
+.value-win img{width: 320px;}
+
+
+/*  제품소개 탭매뉴 */
+.solution-wrap{ width: 100%; height: 100%; background-color: #F8F9FA; padding: 40px 0px;}
+.solution { max-width:348px; height: 100%; text-align: center; margin-left: auto; margin-right: auto;}
+.title h1{ font-size: 21px; color: #353C49; text-align: center; margin-bottom: 12px; }
+.title p{ font-size: 14px; color: #505866; text-align: center;}
+.tab_content {text-align:center; max-width:425px; margin:auto;  border-radius: 24px; padding: 0px; margin-top: 21px; }
+input[type="radio"] {display:none;}
+input[type="radio"] + label { width: 240px; display:inline-block; padding:6px 12px; color:#D2D6DA; font-size:16px;font-weight: 500; cursor:pointer; margin-left: 4px; margin-right: 4px; margin-bottom: 8px;}
+input[type="radio"]:checked + label { width: 240px; background:white; color: #353C49; font-size: 16px; font-weight: 500; border-radius: 12px; box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.16); margin-left: 16px; margin-right: 16px;}
+
+.conbox {display:none;  margin-top: 20px; box-sizing:border-box; border-radius: 24px; padding-top: 12px; margin-left: auto; margin-right:auto; }
+input[id="tab01"]:checked ~ .con1 {display:block;width: 345px; height:238px; background: url(../img-source/solutionimg1.jpg) center; background-size: cover; }
+input[id="tab02"]:checked ~ .con2 {display:block;width: 345px; height:238px; background: url(../img-source/solutionimg2.jpg) center; background-size: cover; }
+input[id="tab03"]:checked ~ .con3 {display:block;width: 345px; height:238px; background: url(../img-source/solutionimg3.jpg) center; background-size: cover; }
+.conbox h1{font-size: 16px; color: #353C49; margin-bottom: 0px;}
+.conbox h2{font-size: 16px; color: white; background: #ff8331; border-radius: 100px; padding: 6px 12px; max-width:108px; margin: auto; margin-top: 112px; box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.16);}
+.conbox p{font-size: 12px; color:#505866;}
+
+/* 슬라이더 영역 */
+.section{width:100%; height: 100%; padding: 40px 0px; background: url(../img-source/app-background.jpg) center; background-size: cover;}
+.section input[id*="slide"] {display:none;}
+.section .slide-wrap02 {max-width:425px; margin:auto;}
+.section .slidelist02 {white-space:nowrap; font-size:0;overflow:hidden;}
+.section .slidelist02 > li {display:inline-block;vertical-align:middle;width:100%;transition:all .75s;}
+.section .slidelist02 > li > a { display:block; position:relative; }
+.app-img1{width: 100%; height: 580px; background: url(../img-source/mobile-app1.png) center; background-size: cover; }
+.app-img2{width: 100%; height: 580px; background: url(../img-source/mobile-app2.png) center; background-size: cover; }
+.app-img3{width: 100%; height: 580px; background: url(../img-source/mobile-app3.png) center; background-size: cover; }
+.app-img4{width: 100%; height: 580px; background: url(../img-source/mobile-app4.png) center; background-size: cover; }
+.section .slidelist02 label {position:absolute; z-index:1;top:37%;transform:translateY(-50%); padding:50px; cursor:pointer;}
+.section .slidelist02 .left {left:16px; background:url('../img-source/app-left.svg') center center / 50% no-repeat;}
+.section .slidelist02 .right {left:86px; background:url('../img-source/app-right.svg') center center / 50% no-repeat;}
+.section .slidelist02 .textbox {position:absolute; z-index:1; top:15%; left:35%; transform:translate(-60%,-50%); line-height:1.6; text-align: left; }
+.section .slidelist02 .textbox h3 {font-size:24px;color:#FF8331;opacity:0;transform:translateY(40px);transition:all 1.75s; font-weight: 900; }
+.section .slidelist02 .textbox h4 {font-size:21px;color:#353C49;opacity:0;transform:translateY(40px);transition:all 1.75s; margin-top: 8px; font-weight: 600; }
+.section .slidelist02 .textbox p {font-size:21px;color:#ff8331;opacity:0;transform:translateY(40px);transition:all 1.75s; margin-top: 16px; font-weight: 400; text-align: center; border: 1px solid #ff8331; padding: 4px; width: 120px; }
+
+/*  세븐미어캣 성과 */
+.performance-wrap{ width: 100%; height: 100%; background-color: #F8F9FA;;  padding: 40px 0px;}
+.performance { max-width:348px; height: 100%; margin-left: auto; margin-right: auto; padding: 0px 16px; }
+.performance-info{ display: flex; flex-direction: column; margin: auto;  }
+.car, .user, .parking{background: url(../img-source/performance-icon.svg) center; background-size: cover; width: 200px; height: 78px; display: inline-block; padding: 6px; margin-top: 24px; margin-left: auto; margin-right: auto; text-align: center; }
+.car h1, .user h1, .parking h1{color: #353C49; font-size: 24px; }
+.car p, .user p, .parking p{color: #505866; font-size: 21px; }
+.title img{width: 160px; margin-bottom: 16px; }
+.title h1{ font-size: 21px; color: #353C49; text-align: center; margin-bottom: 16px; }
+
+/* 문의 카피문구 */
+.partner-info{ width: 100%; height: 100%; background-color:#FF8331; padding:40px 16px; }
+.partner-copy{ min-width:340px; max-width:360px; height: 100%; background-color: white; border-radius: 12px;  margin-left: auto; margin-right: auto; text-align: center; box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.16); }
+.partner-copy .textbox{display:inline-block; padding: 40px 0px 24px 0px; }
+.partner-copy .textbox h1{ font-size: 18px; color: #353C49; margin-bottom: 16px;  }
+.partner-copy .textbox p{ font-size: 16px; color: white; background:#ff8331; border-radius:100px; font-weight: 500; width: 280px; display: inline-block; margin-left: 16px; margin-right: 16px; padding: 8px 16px; margin-bottom: 16px;}
+
+/*  제휴&광고 문의 */
+.inquiry { width:100%; height: 100%; margin-top: 30px; text-align: center;}
+.inquiry-card{ width: 340px; height: 100%; background-color: white; box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.16); margin-right: 0px; margin-left: 0px; border-radius: 16px; padding: 24px 0px; display: inline-block; margin-bottom: 30px;}
+.inquiry-card img{display: inline-block; margin: 0;}
+.inquiry-text{display: inline-block; width: 300px; text-align: center;}
+.inquiry-text h1{ font-size: 21px; color: #353C49; margin-bottom: 4px; margin-top: 0; display: inline-block; }
+.inquiry-text h2{ font-size: 16px; color: #505866; margin-bottom: 4px; font-weight: 200; text-align: center; }
+.inquiry-text p{ font-size: 14px; color: #505866; margin-bottom: 4px; font-weight: 400; margin: auto;  }
+ }
+
+@media all and (min-width:426px) and (max-width: 785px){
+/*  제품소개 탭매뉴 */
+.conbox {display:none;  margin-top: 24px; font-size:16px; box-sizing:border-box; border-radius: 24px; padding: 20px; margin-left: auto; margin-right:auto; }
+input[id="tab01"]:checked ~ .con1 {display:block;width: 425px; height:290px; background: url(../img-source/solutionimg1.jpg) center; background-size: cover; }
+input[id="tab02"]:checked ~ .con2 {display:block;width: 425px; height:290px; background: url(../img-source/solutionimg2.jpg) center; background-size: cover; }
+input[id="tab03"]:checked ~ .con3 {display:block;width: 425px; height:290px; background: url(../img-source/solutionimg3.jpg) center; background-size: cover; }
+.conbox h1{font-size: 16px; color: #353C49; margin-bottom: 8px;}
+.conbox h2{font-size: 16px; color: white; background: #ff8331; border-radius: 100px; padding: 6px 12px; max-width:160px; margin: auto; margin-top: 148px; box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.16);}
+.conbox p{font-size: 12px; color:#505866;}
+}
+
+      
+@media (max-width: 1024px){
+.value{ flex-direction: column; text-align: center;}
+.value-inno{margin-bottom: 32px;}
+.value-con{margin-bottom: 32px;}
+.value-win{margin-bottom: 32px;}
+ }
+
+ 
