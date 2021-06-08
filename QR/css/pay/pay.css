@@ -1,0 +1,25 @@
+.main{width: 100%; height:100%; background-color: #F8F9FA; position: relative; }
+
+/*  차량 정보(이미지, 차량번호) */
+.car-img{width: 100%; height: 200px; background: url(../icon/car-img.jpg) center; background-size: cover; margin-bottom: 8px; }
+.pay-info{width: 100%; padding: 24px 16px; background-color:white; box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, .16);}
+
+/* 결제 정보 */
+.pay-text h1{font-size: 21px; color: #353C49; margin-bottom: 8px; }
+.pay-text-detail{width: 100%; height: 100%; padding: 12px 12px; background-color: #FCFCFC; border: 1px solid #D2D6DA; border-radius: 8px; }
+.pay-text-detail1{display: flex; justify-content: space-between; margin-bottom: 4px; }
+.pay-text-detail1 h2{ font-size:16px; color: #505866; font-weight: 300; text-align: left; }
+.pay-text-detail1 p{ font-size:16px; color: #353C49; font-weight: 500; text-align: right; }
+.pay-text-detail1 h3{ font-size:16px; color: #353C49; font-weight: 400; text-align: left; }
+.pay-text-detail1 b{ font-size:21px; color: #ff8331; font-weight: 900; }
+.pay-text-detail1 h4{ font-size:16px; color: #353C49; font-weight: 400; text-align: right; }
+.pay-text-detail1 h5{ font-size:14px; color: #505866; font-weight: 300; text-align: right; }
+
+/*  결제하기 버튼) */
+.pay-wrap{width: 100%; height: 72px;  position: absolute; bottom: 0px; left: 0px; right: 0px; display:table; }
+.pay-wrap h1{ width: 100%; height: 72px; background-color: #ff8331; border: none; text-align: center; font-size: 21px; font-weight: 600; color: white; display:table-cell; vertical-align: middle; }
+.pay-wrap:hover{cursor: pointer;}
+
+@media (min-width:1024px){
+    .main{max-height: 968px;}
+     }
